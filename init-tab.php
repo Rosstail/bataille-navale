@@ -106,7 +106,7 @@
 	//Vérifier si le bateau peut s'installer (en ligne)
 	function check_co_boat_line($loop, $player_board, $xyd) {
 		while ($xyd[3] >= $xyd[1]) {
-			if ($player_board[$xyd[2]][$xyd[3]] != "~") {
+			if ($player_board[$xyd[2]][$xyd[1]] != "~") {
 				println("Votre bateau est en collision ou dans le territoire d'un autre !");
 				return $loop = true;
 			}
